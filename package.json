@@ -1,0 +1,17 @@
+{
+  "name": "ningrat-catering--frontend--nuxt7",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "latest",
+    "nuxt7": "latest",
+    "nuxt": "latest"
+  }
+}
