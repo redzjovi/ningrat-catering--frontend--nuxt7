@@ -2,6 +2,7 @@ module.exports = {
   // Nuxt modules
   modules: [
     'nuxt7',
+    '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
 

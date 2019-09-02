@@ -10,8 +10,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.6.0",
     "@nuxtjs/pwa": "latest",
-    "nuxt7": "latest",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "nuxt7": "latest"
   }
 }
