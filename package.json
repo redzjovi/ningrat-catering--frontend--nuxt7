@@ -5,12 +5,17 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "dev:local": "sh -ac '. .env.local; nuxt'",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "generate:local": "sh -ac '. .env.local; nuxt generate'",
+    "generate:production": "sh -ac '. .env.production; nuxt generate'",
+    "surge:deploy": "surge dist/ --domain ningrat-catering--frontend--nuxt7.surge.sh"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.6.0",
+    "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "latest",
     "nuxt": "latest",
     "nuxt7": "latest"

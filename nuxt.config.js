@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   // Nuxt modules
   modules: [
@@ -5,6 +7,14 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+
+  /*
+   ** Axios module configuration
+   */
+  axios: {
+    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: process.env.API_URL
+  },
 
   // PWA manifest
   // https://github.com/nuxt-community/pwa-module
