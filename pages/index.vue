@@ -6,7 +6,14 @@
       </f7-nav-left>
       <f7-nav-title>Home</f7-nav-title>
     </f7-navbar>
-    <f7-block-title>Menu</f7-block-title>
+    <f7-block-title>
+      Menu
+      <div class="index--menu--title--right">
+        <f7-button outline>
+          <f7-link href="/product">See All</f7-link>
+        </f7-button>
+      </div>
+    </f7-block-title>
     <f7-row v-if="menuLoading">
       <f7-swiper :params="menuSwiperParams">
         <f7-swiper-slide v-for="(product, index) in 10" :key="index">
@@ -129,5 +136,8 @@ export default {
   background-position: center;
   height: 0;
   padding-bottom: 100%;
+}
+.index--menu--title--right {
+  float: right;
 }
 </style>
