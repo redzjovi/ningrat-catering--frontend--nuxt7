@@ -4,9 +4,28 @@ module.exports = {
   // Nuxt modules
   modules: [
     'nuxt7',
+    '@nuxtjs/auth',
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+
+  /*
+   * Auth module configuration
+   */
+  auth: {
+    redirect: {
+      login: '/auth/login'
+    },
+    strategies: {
+      local: {
+        endpoints: {
+          login: { method: 'post', propertyName: 'data.access_token', url: '/auth/login' },
+          logout: { method: 'post', url: '/auth/logout' },
+          user: { method: 'get', propertyName: 'data', url: '/auth/user' }
+        }
+      }
+    }
+  },
 
   /*
    ** Axios module configuration
@@ -25,7 +44,10 @@ module.exports = {
 
   // Framework7 Config
   framework7: {
-    // ...
+    main: {
+      stackPages: true
+    },
+    themeColor: '#41B883'
   },
 
   // Build configuration

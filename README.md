@@ -20,7 +20,7 @@ yarn start
 yarn run generate:production
 
 # deploy folder /dist to surge.sh
-$ yarn run surge:deploy
+yarn run surge:deploy
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
