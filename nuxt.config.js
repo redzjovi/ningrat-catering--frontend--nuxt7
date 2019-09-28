@@ -9,6 +9,10 @@ module.exports = {
     '@nuxtjs/pwa'
   ],
 
+  plugins: [
+    '~/plugins/vue-offline'
+  ],
+
   /*
    * Auth module configuration
    */

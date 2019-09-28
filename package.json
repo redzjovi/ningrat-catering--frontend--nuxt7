@@ -19,6 +19,7 @@
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "latest",
     "nuxt": "latest",
-    "nuxt7": "latest"
+    "nuxt7": "latest",
+    "vue-offline": "^2.0.8"
   }
 }
