@@ -5,6 +5,9 @@
         <NavbarLeftLinkBars></NavbarLeftLinkBars>
       </f7-nav-left>
       <f7-nav-title>Home</f7-nav-title>
+      <f7-nav-right>
+        <f7-link icon-f7="bars" panel-open="right"></f7-link>
+      </f7-nav-right>
     </f7-navbar>
     <f7-block-title>
       Menu

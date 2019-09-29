@@ -2,6 +2,7 @@
   <div>
     <NotificationOffline></NotificationOffline>
     <PanelLeft></PanelLeft>
+    <PanelRight></PanelRight>
     <nuxt></nuxt>
   </div>
 </template>
@@ -10,7 +11,8 @@
 export default {
   components: {
     NotificationOffline: () => import('~/components/NotificationOffline'),
-    PanelLeft: () => import('~/components/PanelLeft')
+    PanelLeft: () => import('~/components/PanelLeft'),
+    PanelRight: () => import('~/components/PanelRight')
   }
 }
 </script>
